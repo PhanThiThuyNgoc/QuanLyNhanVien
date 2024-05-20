@@ -37,7 +37,7 @@ public class GiaoDienDangKyController implements Initializable {
                 String password = tf_password.getText();
                 if (!ten.isEmpty() && !Email.isEmpty() && !password.isEmpty()){
                     ConnectDB connectDB = new ConnectDB();
-                    String query ="INSERT INTO `taikhoan`(`Ten`, `password`, `Email`) VALUES ('"+ten+"','"+Email+"','"+password+"')";
+                    String query ="INSERT INTO `taikhoan`(`Ten`, `password`, `Email`) VALUES ('"+ten+"','"+password+"','"+Email+"')";
                     try {
                         int check = connectDB.getStmt().executeUpdate(query);
                         if (check != 0){

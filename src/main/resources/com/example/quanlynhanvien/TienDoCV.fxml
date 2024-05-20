@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -68,11 +69,6 @@
             <Font name="System Bold Italic" size="17.0" />
          </font>
       </Label>
-      <Label fx:id="lb_taocosodulieu" layoutX="456.0" layoutY="138.0" text="Tạo cơ sở dữ liệu">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
       <Label fx:id="lb_ngaybatdau" layoutX="456.0" layoutY="188.0" text="16/04/2024">
          <font>
             <Font size="16.0" />
@@ -98,5 +94,6 @@
             <Font size="16.0" />
          </font>
       </Label>
+      <TextField fx:id="tf_tenCV" layoutX="456.0" layoutY="139.0" prefHeight="26.0" prefWidth="175.0" />
    </children>
 </AnchorPane>

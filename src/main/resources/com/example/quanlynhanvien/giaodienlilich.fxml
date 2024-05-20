@@ -12,7 +12,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.GiaoDienLiLichController">
    <children>
-      <AnchorPane layoutX="42.0" layoutY="71.0" prefHeight="155.0" prefWidth="151.0" style="-fx-background-color: navy;" />
       <Label layoutX="239.0" layoutY="77.0" prefHeight="27.0" prefWidth="83.0" text="Họ Và Tên:">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -89,8 +88,11 @@
       <ChoiceBox fx:id="cb_ngay" layoutX="337.0" layoutY="109.0" prefHeight="25.0" prefWidth="74.0" />
       <ChoiceBox fx:id="cb_thang" layoutX="415.0" layoutY="109.0" prefHeight="25.0" prefWidth="65.0" />
       <ChoiceBox fx:id="cb_nam" layoutX="482.0" layoutY="109.0" prefHeight="25.0" prefWidth="74.0" />
-      <ChoiceBox fx:id="cb_ngaythamgia" layoutX="215.0" layoutY="328.0" prefHeight="25.0" prefWidth="74.0" />
-      <ChoiceBox fx:id="cb_thangthamgia" layoutX="306.0" layoutY="328.0" prefHeight="25.0" prefWidth="83.0" />
-      <ChoiceBox fx:id="cb_namthamgia" layoutX="406.0" layoutY="328.0" prefHeight="25.0" prefWidth="83.0" />
+      <Label fx:id="lb_ngayThamGia" layoutX="217.0" layoutY="328.0" prefHeight="17.0" prefWidth="112.0" text="01/01/2024">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_Avatar" fitHeight="162.0" fitWidth="143.0" layoutX="50.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

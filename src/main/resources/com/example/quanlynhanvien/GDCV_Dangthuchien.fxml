@@ -4,28 +4,48 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.GDCV_DangthuchienController">
    <children>
-      <TableView fx:id="table_taca" layoutY="28.0" prefHeight="373.0" prefWidth="612.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+      <TableView fx:id="table_taca" layoutY="28.0" prefHeight="248.0" prefWidth="612.0" AnchorPane.bottomAnchor="174.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
          <columns>
             <TableColumn fx:id="colum_IDcongviec" prefWidth="119.33332824707031" text="ID Công Việc" />
-            <TableColumn fx:id="colum_congviec" prefWidth="298.0000305175781" text="Công Việc " />
-            <TableColumn fx:id="colum_Hannop" minWidth="0.0" prefWidth="181.33331298828125" text="Hạn Nộp" />
+            <TableColumn fx:id="colum_congviec" prefWidth="344.00000762939453" text="Công Việc " />
+            <TableColumn fx:id="colum_Hannop" minWidth="0.0" prefWidth="146.39993286132812" text="Hạn Nộp" />
          </columns>
       </TableView>
-      <Button fx:id="bt_nopcongviec" layoutX="475.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Nộp Công Việc" />
+      <Button fx:id="bt_nopcongviec" layoutX="466.0" layoutY="317.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="131.0" text="Nộp Công Việc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
       <Label layoutX="190.0" layoutY="3.0" prefHeight="21.0" prefWidth="205.0" text="Công Việc Đang Thực Hiện ">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="bt_xemcongviec" layoutX="36.0" layoutY="407.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="167.0" text="Xem nội dung công việc ">
+      <TextArea fx:id="tf_baoCao" layoutX="14.0" layoutY="335.0" prefHeight="113.0" prefWidth="444.0" promptText="Báo cáo...">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font size="14.0" />
          </font>
-      </Button>
+      </TextArea>
+      <TextField fx:id="tf_linkSP" layoutX="14.0" layoutY="303.0" prefHeight="26.0" prefWidth="444.0" promptText="Link nộp sản phẩm">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="25.0" layoutY="277.0" text="ID Công Việc">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_idCongViec" layoutX="148.0" layoutY="277.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

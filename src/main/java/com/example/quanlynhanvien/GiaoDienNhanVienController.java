@@ -92,7 +92,7 @@ public class GiaoDienNhanVienController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 try {
-                    DBUtils.changeScene(actionEvent, "GiaoDienCongViec.fxml", "Trang nhân viên", 500, 800);
+                    DBUtils.changeScene(actionEvent, "GiaoDienCongViec.fxml", "Trang nhân viên", 540, 810);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -106,7 +106,7 @@ public class GiaoDienNhanVienController implements Initializable {
                 Acp_nhanvien_ShowFile.getChildren().clear();
                 AnchorPane anchorPane= null;
                 try{
-                    anchorPane = FXMLLoader.load(getClass().getResource("GDCV_nhom.fxml"));
+                    anchorPane = FXMLLoader.load(getClass().getResource("GiaoDienNV_Chat.fxml"));
                 } catch(Exception e){
                     throw new RuntimeException(e);
 
@@ -118,7 +118,7 @@ public class GiaoDienNhanVienController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 try{
-                    DBUtils.changeScene(actionEvent,"Giaodiendangki.fxml", " trang đăng ký", 500, 800);
+                    DBUtils.changeScene(actionEvent,"GiaoDien.fxml", "Trang đăng nhập", 500, 800);
                 } catch(IOException e){
                     throw  new RuntimeException(e);
                 }

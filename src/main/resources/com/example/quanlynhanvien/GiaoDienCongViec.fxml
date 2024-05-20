@@ -62,7 +62,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="bt_dangthuchien" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="114.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: white;" text="Đang Thực Hiện" textAlignment="CENTER">
+            <Button id="bt_dangthuchien" fx:id="bt_dangthuchien" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="114.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: white;" text="Đang Thực Hiện" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

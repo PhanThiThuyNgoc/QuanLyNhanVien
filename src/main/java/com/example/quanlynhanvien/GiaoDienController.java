@@ -13,6 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
@@ -40,7 +41,10 @@ public class GiaoDienController implements Initializable {
             public void handle(ActionEvent actionEvent) {
                 String Email = email.getText();
                 String passWord = matkhau.getText();
-
+                if (Email.equals("") || passWord.equals("")){
+                    DBUtils.printAlertMsg("Cảnh Báo ","Vui lòng nhập thông tin đầy đủ");
+                    return ;
+                }
                 if(Email != "" && passWord != "" && Email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
                     ConnectDB connectDB = new ConnectDB();
                     String query = "SELECT `Email`, `Level` FROM `taikhoan` WHERE `password` = '" + passWord + "' AND `Email` = '" + Email + "'";
@@ -56,7 +60,9 @@ public class GiaoDienController implements Initializable {
                         throw new RuntimeException(e);
 
                     }
-
+                    // lưu email user vào file txt
+                    createFileSaveInfo(Email);
+                    // kiểm tra cấp bậc tài khoản
                     if(check == true) {
                         if(level == 1){
                             try {
@@ -66,7 +72,7 @@ public class GiaoDienController implements Initializable {
                             }
                         }else {
                             try {
-                                DBUtils.changeScene(actionEvent, "Gocc.fxml", "Trang quản lý", 500, 800);
+                                DBUtils.changeScene(actionEvent, "Gocc.fxml", "Trang quản lý", 540, 810);
                             } catch (IOException e) {
                                 throw new RuntimeException(e);
                             }
@@ -74,6 +80,8 @@ public class GiaoDienController implements Initializable {
                     } else {
                         DBUtils.printAlertMsg("Thông báo", "Không đúng thông tin đăng nhập!");
                     }
+                }else{
+                    DBUtils.printAlertMsg("Thông báo", "Định dạng email không đúng!");
                 }
             }
         });
@@ -88,6 +96,18 @@ public class GiaoDienController implements Initializable {
                 }
             }
         });
+
+    }
+
+    public void createFileSaveInfo(String email){
+        String nameFile = "infoUser.txt";
+        try {
+            FileWriter writer = new FileWriter(nameFile);
+            writer.write(email);
+            writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }

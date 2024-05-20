@@ -30,9 +30,6 @@ public class GocController implements Initializable {
     private Button phan_cv;
 
     @FXML
-    private Button thanh_tich;
-
-    @FXML
     private Button thongtin;
 
     @FXML
@@ -102,24 +99,24 @@ public class GocController implements Initializable {
                 }
             }
         });
-        thanh_tich.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                try {
-                    pane_load_file.getChildren().clear();
-                    AnchorPane anchorPane = null;
-                    anchorPane = FXMLLoader.load(getClass().getResource("Thanhtich.fxml"));
-                    pane_load_file.getChildren().add(anchorPane);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        });
+//        thanh_tich.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent actionEvent) {
+//                try {
+//                    pane_load_file.getChildren().clear();
+//                    AnchorPane anchorPane = null;
+//                    anchorPane = FXMLLoader.load(getClass().getResource("Thanhtich.fxml"));
+//                    pane_load_file.getChildren().add(anchorPane);
+//                } catch (IOException e) {
+//                    throw new RuntimeException(e);
+//                }
+//            }
+//        });
          dangxuat.setOnAction(new EventHandler<ActionEvent>() {
              @Override
              public void handle(ActionEvent actionEvent) {
                  try {
-                     DBUtils.changeScene(actionEvent, "Giaodiendangki.fxml","trang đăng ký", 500,800);
+                     DBUtils.changeScene(actionEvent, "GiaoDien.fxml","Trang đăng nhập", 500,800);
                  } catch (IOException e){
                      throw new RuntimeException(e);
                  }

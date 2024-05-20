@@ -49,7 +49,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="nhanvien" layoutX="12.0" layoutY="14.0" text="10">
+            <Label fx:id="lb_soluongnhanvien" layoutX="12.0" layoutY="14.0" text="10">
                <font>
                   <Font name="System Bold" size="35.0" />
                </font>
@@ -68,7 +68,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="nv_ngiviec" layoutX="13.0" layoutY="18.0" text="2">
+            <Label fx:id="lb_nv_ngiviec" layoutX="13.0" layoutY="18.0" text="2">
                <font>
                   <Font name="System Bold" size="35.0" />
                </font>
@@ -87,7 +87,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="tiendo" layoutX="12.0" layoutY="13.0" text="10%">
+            <Label fx:id="lb_tiendo" layoutX="12.0" layoutY="13.0" text="10%">
                <font>
                   <Font name="System Bold" size="35.0" />
                </font>
@@ -106,7 +106,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="congviec" layoutX="13.0" layoutY="12.0" text="5">
+            <Label fx:id="lb_congviec" layoutX="13.0" layoutY="12.0" text="5">
                <font>
                   <Font name="System Bold" size="35.0" />
                </font>

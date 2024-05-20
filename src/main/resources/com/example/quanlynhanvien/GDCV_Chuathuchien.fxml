@@ -4,12 +4,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.GDCV_ChuathuchienController">
    <children>
-      <TableView fx:id="table_taca" layoutY="24.0" prefHeight="377.0" prefWidth="612.0">
+      <TableView fx:id="table_taca" layoutY="24.0" prefHeight="350.0" prefWidth="612.0">
          <columns>
             <TableColumn fx:id="colum_IDcongviec" prefWidth="119.33332824707031" text="ID Công Việc" />
             <TableColumn fx:id="colum_congviec" prefWidth="337.3333435058594" text="Công Việc " />
@@ -21,7 +22,25 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="bt_Noidungcv" layoutX="287.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Nội Dung Công Việc" />
-      <Button fx:id="bt_xacnhan" layoutX="473.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Xác Nhận" />
+      <Button fx:id="bt_xacnhan" layoutX="468.0" layoutY="393.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Xác Nhận">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="24.0" layoutY="384.0" text="ID Công việc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_idCV" layoutX="126.0" layoutY="384.0" prefHeight="22.0" prefWidth="97.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="412.0" text="Công việc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_CongViec" layoutX="126.0" layoutY="410.0" prefHeight="26.0" prefWidth="332.0" />
    </children>
 </AnchorPane>

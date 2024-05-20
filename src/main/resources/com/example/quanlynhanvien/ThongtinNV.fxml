@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,7 +24,7 @@
             </ImageView>
          </graphic>
       </Label>
-      <Button fx:id="them" layoutX="353.0" layoutY="7.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Thêm" textFill="WHITE">
+      <Button fx:id="them" layoutX="361.0" layoutY="399.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Thêm" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -35,7 +36,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="462.0" layoutY="7.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Xoá" textFill="WHITE" fx:id="xoa">
+      <Button layoutX="500.0" layoutY="399.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Xoá" textFill="WHITE" fx:id="xoa">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -47,105 +48,79 @@
             </ImageView>
          </graphic>
       </Button>
-      <TableView fx:id="table_Thongtin" layoutX="14.0" layoutY="74.0" prefHeight="350.0" prefWidth="250.0">
+      <TableView fx:id="table_Thongtin" layoutX="14.0" layoutY="42.0" prefHeight="350.0" prefWidth="250.0">
         <columns>
           <TableColumn fx:id="cot_ID" prefWidth="71.2000150680542" text="ID" />
           <TableColumn fx:id="cot_Hoten" prefWidth="177.5999969482422" text="Họ Tên" />
         </columns>
       </TableView>
-      <AnchorPane layoutX="277.0" layoutY="74.0" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: navy;">
+      <AnchorPane layoutX="277.0" layoutY="42.0" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: navy;">
          <children>
-            <Label layoutX="13.0" layoutY="12.0" text="ID" textFill="WHITE">
+            <Label layoutX="10.0" layoutY="30.0" text="ID" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label fx:id="id" layoutX="161.0" layoutY="12.0" style="-fx-background-color: white;" text="123">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="13.0" layoutY="45.0" text="Họ Tên" textFill="WHITE">
+            <Label layoutX="10.0" layoutY="63.0" text="Họ Tên" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label fx:id="hoten" layoutX="161.0" layoutY="45.0" style="-fx-background-color: white;" text="Phan Thị Thuý Ngọc">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="13.0" layoutY="79.0" text="Giới tính" textFill="WHITE">
+            <Label layoutX="10.0" layoutY="97.0" text="Giới tính" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="111.0" text="Ngày sinh" textFill="WHITE">
+            <Label layoutX="11.0" layoutY="129.0" text="Ngày sinh" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="15.0" layoutY="144.0" text="Chức vụ" textFill="WHITE">
+            <Label layoutX="12.0" layoutY="162.0" text="Chức vụ" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="179.0" text="Địa chỉ" textFill="WHITE">
+            <Label layoutX="11.0" layoutY="197.0" text="Địa chỉ" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="212.0" text="SĐT" textFill="WHITE">
+            <Label layoutX="11.0" layoutY="230.0" text="SĐT" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="13.0" layoutY="246.0" text="Gmail" textFill="WHITE">
+            <Label layoutX="10.0" layoutY="264.0" text="Gmail" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="11.0" layoutY="280.0" text="Ngày tham gia" textFill="WHITE">
+            <Label layoutX="8.0" layoutY="298.0" text="Ngày tham gia" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label fx:id="gioitinh" layoutX="161.0" layoutY="78.0" style="-fx-background-color: white;" text="Nữ">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="ngaysinh" layoutX="161.0" layoutY="111.0" style="-fx-background-color: white;" text="08/07/2005">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="chucvu" layoutX="161.0" layoutY="144.0" style="-fx-background-color: white;" text="Nhân viên">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="diachi" layoutX="161.0" layoutY="178.0" style="-fx-background-color: white;" text="105 Võ Sạ">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="so_dienthoai" layoutX="161.0" layoutY="212.0" style="-fx-background-color: white;" text="12345678">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="gmail" layoutX="161.0" layoutY="246.0" style="-fx-background-color: white;" text="ngocptt23@gmail.com">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="ngay_thamgia" layoutX="161.0" layoutY="280.0" style="-fx-background-color: white;" text="12/04/2024">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
+            <TextField fx:id="id" layoutX="159.0" layoutY="28.0" prefHeight="26.0" prefWidth="181.0" />
+            <TextField fx:id="hoten" layoutX="158.0" layoutY="60.0" prefHeight="26.0" prefWidth="182.0" />
+            <TextField fx:id="gioitinh" layoutX="158.0" layoutY="94.0" prefHeight="26.0" prefWidth="182.0" />
+            <TextField fx:id="ngaysinh" layoutX="158.0" layoutY="126.0" prefHeight="26.0" prefWidth="182.0" />
+            <TextField fx:id="ngay_thamgia" layoutX="159.0" layoutY="296.0" prefHeight="26.0" prefWidth="182.0" />
+            <TextField fx:id="chucvu" layoutX="159.0" layoutY="160.0" prefHeight="26.0" prefWidth="182.0" />
+            <TextField fx:id="diachi" layoutX="158.0" layoutY="194.0" prefHeight="26.0" prefWidth="182.0" />
+            <TextField fx:id="so_dienthoai" layoutX="159.0" layoutY="227.0" prefHeight="26.0" prefWidth="182.0" />
+            <TextField fx:id="gmail" layoutX="159.0" layoutY="261.0" prefHeight="26.0" prefWidth="182.0" />
          </children>
       </AnchorPane>
+      <TextField fx:id="tf_emailnhanvienmoi" layoutX="87.0" layoutY="402.0" prefHeight="30.0" prefWidth="257.0" promptText="Tài khoản muốn thêm ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="28.0" layoutY="404.0" prefHeight="26.0" prefWidth="49.0" text="Email">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

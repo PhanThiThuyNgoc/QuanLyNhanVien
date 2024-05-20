@@ -60,18 +60,6 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="thanh_tich" alignment="BASELINE_LEFT" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Thành tích" textAlignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/medal-.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
             <Button fx:id="dangxuat" alignment="BASELINE_LEFT" layoutX="8.0" layoutY="391.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: navy;" text="Đăng xuất" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />

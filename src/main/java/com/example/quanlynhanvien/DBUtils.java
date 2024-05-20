@@ -14,6 +14,10 @@ import java.io.IOException;
 
 public class DBUtils {
     public static void changeScene(ActionEvent actionEvent,String fxmlFile, String title, int height, int width ) throws IOException {
+        // cho giá trị mặc định của giao diện
+        height=540;
+        width=810;
+
         Parent root = null;
         root = FXMLLoader.load(DBUtils.class.getResource(fxmlFile));
         // tìm giao diện đang hiển thị trên màn hình
