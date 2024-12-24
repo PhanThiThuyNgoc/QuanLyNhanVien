@@ -1,4 +1,4 @@
-package com.example.quanlynhanvien;
+package com.example.qlnhanvien.View;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

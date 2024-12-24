@@ -1,4 +1,4 @@
-package com.example.quanlynhanvien;
+package com.example.qlnhanvien.View;
 
 import com.example.quanlynhanvien.DAO.CongViecDAO;
 import com.example.quanlynhanvien.Get.GetInfo;
